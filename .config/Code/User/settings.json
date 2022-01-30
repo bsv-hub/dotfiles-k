@@ -1,15 +1,26 @@
 {
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "intelephense.telemetry.enabled": false,
+    "redhat.telemetry.enabled": false,
+    "telemetry.telemetryLevel": "off",
     "editor.minimap.enabled": false,
+    "editor.snippetSuggestions": "top",
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "all",
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.wordSeparators": "`~!#%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.wordWrapColumn": 120,
+    "editor.rulers": [ 120 ],
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.wordWrap": "on",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
     "terminal.integrated.copyOnSelection": true,
     "workbench.sideBar.location": "left",
     "search.searchOnTypeDebouncePeriod": 400,
     "search.showLineNumbers": true,
-    "editor.snippetSuggestions": "top",
     "files.trimTrailingWhitespace": true,
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
-    "editor.renderControlCharacters": false,
-    "editor.renderWhitespace": "all",
+    "window.menuBarVisibility": "toggle",
     "extensions.ignoreRecommendations": false,
     "terminal.integrated.scrollback": 2200,
     "terminal.integrated.rightClickBehavior": "paste",
@@ -22,17 +33,10 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "workbench.enableExperiments": false,
     "problems.showCurrentInStatus": true,
-    "editor.copyWithSyntaxHighlighting": false,
     "search.quickOpen.history.filterSortOrder": "recency",
-    "editor.wordSeparators": "`~!#%^&*()-=+[{]}\\|;:'\",.<>/?",
-    "aceJump.finder.onlyInitialLetter": false,
-    "aceJump.finder.skipSelection": true,
-    "aceJump.placeholder.upperCase": true,
     "git.enableSmartCommit": true,
     "git.smartCommitChanges": "tracked",
     "git.suggestSmartCommit": false,
-    "aceJump.finder.includeEndCharInSelection": false,
-    "bookmarks.sideBar.expanded": true,
     "explorer.autoReveal": false,
     "cSpell.enableFiletypes": [
         "!java",
@@ -62,65 +66,10 @@
         "*.blade.php": "html",
         "*.tpl": "html"
     },
-    "intelephense.telemetry.enabled": false,
     "phpSniffer.autoDetect": true,
     "phpSniffer.standard": "PSR12",
     "phpSniffer.run": "onType",
-    "editor.wordWrapColumn": 120,
-    "editor.rulers": [
-        120
-    ],
     "workbench.colorTheme": "Gruvbox Dark Medium",
-    "vim.leader": "<Space>",
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<leader>",
-                "<leader>"
-            ],
-            "commands": [
-                "extension.aceJump.multiChar",
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "j"
-            ],
-            "after": [
-                "1",
-                "0",
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "k"
-            ],
-            "after": [
-                "1",
-                "0",
-                "k"
-            ]
-        }
-    ],
-    "vim.overrideCopy": false,
-    "vim.useCtrlKeys": false,
-    "editor.fontFamily": "JetBrains Mono",
-    "vim.sneak": true,
-    "vim.camelCaseMotion.enable": true,
     "toggler.toggles": [
         [
             "private",
@@ -139,15 +88,7 @@
     },
     "python.pythonPath": "/usr/bin/python3",
     "security.workspace.trust.enabled": false,
-    "tabnine.experimentalAutoImports": true,
-    "terminal.integrated.altClickMovesCursor": false,
     "files.autoSaveDelay": 1500,
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "redhat.telemetry.enabled": false,
-    "editor.wordWrap": "on",
     "workbench.activityBar.visible": false,
     "json.maxItemsComputed": 7000,
     "terminal.integrated.defaultProfile.linux": "/bin/bash (migrated)",
@@ -158,10 +99,7 @@
         }
     },
     "files.autoSave": "onFocusChange",
-    "telemetry.telemetryLevel": "off",
-    "editor.unicodeHighlight.ambiguousCharacters": false,
     "update.mode": "manual",
-    "vim.useSystemClipboard": true,
     "vva.trustedDomain": true,
     "terminal.integrated.tabs.enabled": false,
 }

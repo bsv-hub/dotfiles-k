@@ -1,13 +1,12 @@
 KATACODACODE_DIR := /opt/.katacodacode/user-data/User/
 
-install: copy-configs-to-system apt-install snap-install
+install: copy-configs-to-system apt-install
 
-# ranger tig tmux
 apt-install:
 	sudo apt update
-	sudo apt -y install curl ansible \
+	sudo apt -y install curl wget \
 		apt-transport-https ca-certificates software-properties-common \
-		tmux ncdu
+		tmux ranger ncdu
 # neovim tldr fzf
 
 # copy-configs-from-system:
