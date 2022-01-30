@@ -1,0 +1,108 @@
+{
+    "fn": {
+        "prefix": "fn",
+        "body": [
+            "fn (${1:$$item}) => $2",
+        ]
+    },
+    "return": {
+        "prefix": "re",
+        "body": [
+            "return $0;",
+        ],
+    },
+    "variable": {
+        "prefix": "vv",
+        "body": "\\$${1/(\\s+)(\\w)/${2:/upcase}/ig}",
+        "description": "variable"
+    },
+    "assign variable": {
+        "prefix": "av",
+        "body": "\\$${1/(\\s+)(\\w)/${2:/upcase}/ig} = $0;",
+        "description": "variable"
+    },
+
+    // Class
+    "class …": {
+        "prefix": "cl",
+        "body": [
+            "class ${1:$TM_FILENAME_BASE}${2: extends ${3:AnotherClass}}",
+            "{", "\t$0", "}", ""
+        ],
+    },
+    "class with phpdoc": {
+        "prefix": "cld",
+        "body": [
+            "/**",
+            "* $1",
+            "*/",
+            "class ${1:$TM_FILENAME_BASE} ${2:extends ${3:AnotherClass}}",
+            "{", "\t$0", "}", ""
+        ],
+    },
+
+    "method": {
+        "prefix": "me",
+        "body": [
+            "${1|private,public,protected,public static|} function ${3/\\s+(\\w+)/${1:/capitalize}/ig}($4)",
+            "{", "\t$0", "}"
+        ],
+    },
+    "constructor": {
+        "prefix": "cstr",
+        "body": [
+            "${1|private,public|} function __construct($3)",
+            "{", "\t$0", "}"
+        ],
+    },
+    "public function": {
+        "prefix": "pf",
+        "body": [
+            "public function ${2/\\s+(\\w+)/${1:/capitalize}/ig}($3)",
+            "{", "\t$0", "}"
+        ],
+    },
+    "private function": {
+        "prefix": "prf",
+        "body": [
+            "private function ${2/\\s+(\\w+)/${1:/capitalize}/ig}($3)",
+            "{", "\t$0", "}"
+        ],
+    },
+    "protected function": {
+        "prefix": "prof",
+        "body": [
+            "protected function ${2/\\s+(\\w+)/${1:/capitalize}/ig}($3)",
+            "{", "\t$0", "}"
+        ],
+    },
+    "public static function": {
+        "prefix": "psf",
+        "body": [
+            "public static function ${2/\\s+(\\w+)/${1:/capitalize}/ig}($3)",
+            "{", "\t$0", "}"
+        ],
+    },
+
+    "const": {
+        "prefix": "co",
+        "body": [
+            "${1|public,private|} const ${2/(\\w+)(\\s+)(\\w+$)?/${1:/upcase}_${3:/upcase}/ig} = $3;$0",
+        ],
+    },
+
+    "attribute": {
+        "prefix": "atr",
+        "body": [
+            "${1|private,public,protected|} \\$${2/(\\s+)(\\w+)/${2:/capitalize}/ig} = $3;$0",
+        ],
+    },
+
+    "psy shell": {
+        "prefix": "psy",
+        "body": [
+            "eval(\\Psy\\sh());$0",
+        ],
+    },
+
+}
