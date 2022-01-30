@@ -7,7 +7,8 @@ apt-install:
 	sudo apt update
 	sudo apt -y install curl ansible \
 		apt-transport-https ca-certificates software-properties-common \
-		tmux neovim ncdu tldr fzf
+		tmux ncdu
+# neovim tldr fzf
 
 # copy-configs-from-system:
 # 	mkdir -p .config/Code/User/snippets/ \
