@@ -21,8 +21,8 @@ apt-install:
 
 copy-configs-to-system:
 	cp -R .config/ ~/.config/
-	mkdir -p "$$KATACODACODE_DIR" \
-		&& cp -R .config/Code/User/* "$$KATACODACODE_DIR"
+	mkdir -p /opt/.katacodacode/user-data/User/ \
+		&& cp -R .config/Code/User/* /opt/.katacodacode/user-data/User/
 
 ripgrep-workaround:
 	apt-get download ripgrep
